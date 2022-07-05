@@ -78,7 +78,7 @@ public class Login_StepDefinitions {
         Assert.assertTrue(string.equals(Driver.getDriver().getTitle()));
     }
 
-    @Given("Salesmanager-Posmanager user fills in the password field")
+    @When("Salesmanager-Posmanager user fills in the password field")
     public void salesmanager_posmanager_user_fills_in_the_password_field() {
         Faker faker = new Faker();
         loginPage.password.sendKeys(faker.bothify("???????"));

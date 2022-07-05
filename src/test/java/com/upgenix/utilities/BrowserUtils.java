@@ -67,4 +67,13 @@ public class BrowserUtils {
         }
     }
 
+    /**
+     * This method will accept a String as expected value and verify actual URL CONTAINS the value
+     * @param expectedInTitle
+     */
+
+    public static void verifyURLContains(String expectedInTitle){
+
+    }
+
 }

@@ -63,7 +63,7 @@ Feature: Upgenix application login feature
   Scenario: "Reset Password" page verification after clicking on the "Reset password" link
     When Salesmanager-Posmanager user clicks the reset password link
     Then The title should be "Reset password | Best solution for startups".
-
+   @smoke
   Scenario: Bullet signs verification
     When Salesmanager-Posmanager user fills in the password field
     Then User should see the password in bullet signs by default
