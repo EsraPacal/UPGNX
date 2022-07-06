@@ -12,7 +12,7 @@ Feature: Upgenix application logout feature
     And user clicks the logout button in dropdown
     Then Actual title should be "Login | Best solution for startups"
 
-  Scenario: verification of the step back button
+  Scenario: verification of the step back function
     When user clicks the user avatar
     And user clicks the logout button in dropdown
     And Actual title should be "Login | Best solution for startups"
