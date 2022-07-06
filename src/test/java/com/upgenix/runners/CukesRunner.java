@@ -10,11 +10,12 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber.json"
         },
         features = "src/test/resources/features",
         glue = "com/upgenix/step_definitions",
         dryRun = false,
-        tags = "@smoke",
+        tags = "@Logout",
         publish = false
 )
 
