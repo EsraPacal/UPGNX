@@ -1,5 +1,6 @@
 package com.upgenix.step_definitions;
 
+import com.upgenix.pages.LoginPage;
 import com.upgenix.pages.LogoutPage;
 import com.upgenix.utilities.ConfigurationReader;
 import com.upgenix.utilities.Driver;
@@ -16,10 +17,13 @@ public class Logout_StepDefinitions {
 
     @Given("User is on the home page")
     public void user_is_on_the_home_page() {
+
+        LoginPage loginPage= new LoginPage();
+
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
-        logoutPage.emailBox.sendKeys("salesmanager18@info.com");
-        logoutPage.passwordBox.sendKeys("salesmanager");
-        logoutPage.loginButton.click();
+        loginPage.email.sendKeys("salesmanager18@info.com");
+        loginPage.password.sendKeys("salesmanager");
+        loginPage.loginButton.click();
     }
     @Then("User verifies that the title is {string}")
     public void user_verifies_that_the_title_is(String expectedTitle) {

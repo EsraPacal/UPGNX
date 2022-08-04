@@ -35,6 +35,7 @@ public class Login_StepDefinitions {
     public void salesmenager_posmanager_user_clicks_login_button() {
         loginPage.loginButton.click();
     }
+
     @Then("Users should see that expectedTitle is {string}")
     public void users_should_see_that_expected_title_is(String string) {
         Assert.assertEquals(string,Driver.getDriver().getTitle());
@@ -64,7 +65,6 @@ public class Login_StepDefinitions {
     @Then("User should see the Please fill out this field. message")
     public void user_should_see_the_please_fill_out_this_field_message() {
 
-
         Assert.assertEquals("Please fill out this field.", loginPage.email.getAttribute("validationMessage"));
        //Assert.assertTrue(loginPage.password.getAttribute("validationMessage").contains("Please fill out this field."));
     }
@@ -73,6 +73,7 @@ public class Login_StepDefinitions {
     public void salesmanager_posmanager_user_clicks_the_reset_password_link() {
         loginPage.resetPassword.click();
     }
+
     @Then("The title should be {string}.")
     public void the_title_should_be(String string) {
         Assert.assertTrue(string.equals(Driver.getDriver().getTitle()));

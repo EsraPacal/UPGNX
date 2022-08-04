@@ -11,15 +11,6 @@ public class LogoutPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "login")
-    public WebElement emailBox;
-
-    @FindBy(id = "password")
-    public WebElement passwordBox;
-
-    @FindBy(xpath = "//button[.='Log in']")
-    public WebElement loginButton;
-
     @FindBy(xpath= "//span[@class='oe_topbar_name']")
     public WebElement userIcon;
 
